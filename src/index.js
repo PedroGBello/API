@@ -5,18 +5,26 @@
     4. Call "get()" when deployed;
     5. Deploy server;
     6. Import MongoDB connection from "src/config/mongoDB.js"
+    7. Import router from "/src/routers/music.js" and call "use()" with endpoint;
+    8. Call "use()" with express.json();
 */
 
 import express from "express";
+import { router as musicRouter } from "./Routers/music.js";
+import "./config/mongoDB.js";
 
 const PORT = process.env.PORT ?? 3000;
 const app = express();
+
+app.use(express.json());
+app.use("/api/v1/music", musicRouter);
+
 app.get("/", (req, res) => {
 	console.log(req);
 	res.send("Hello, World!");
 });
-app.listen(PORT, (err) => {
-	err
-		? console.log(`Server not running: ${err}`)
+app.listen(PORT, (error) => {
+	error
+		? console.log(`Server not running: ${error}`)
 		: console.log(`Server up: http://localhost:${PORT} | Ctrl+C to exit.`);
 });

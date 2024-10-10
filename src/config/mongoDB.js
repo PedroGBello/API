@@ -14,4 +14,4 @@ async function main() {
 // Si fuera a haber un error, se lo atrapa con "catch()":
 main()
 	.then(() => console.log("MongoDB connected on local environment."))
-	.catch((err) => console.log(`Database connection failed: ${err.message}`));
+	.catch((error) => console.log(`Database connection failed: ${error.message}`));

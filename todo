@@ -4,3 +4,17 @@
 2.2. type: module in package.json
 3.1. npm i mongoose and import in src/models/mongoDB/Music.js
 . Endpoints
+
+{
+	"title": "God Put a Smile Upon Your Face",
+	"artist": "Coldplay",
+	"album": "A Rush of Blood to the Head",
+	"year": 2002,
+	"genre": [
+		"Rock",
+		"Alternative"
+	],
+	"poster": "https://www.coldplay.com/",
+	"duration": 298,
+	"rating": 8
+}

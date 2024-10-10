@@ -12,40 +12,40 @@ const MusicSchema = new Schema(
 	{
 		title: {
 			type: String,
-			require: true,
+			required: true,
 			trim: true,
 		},
 		artist: {
 			type: String,
-			require: true,
+			required: true,
 			trim: true,
 		},
 		album: {
 			type: String,
-			require: true,
+			required: true,
 			trim: true,
 		},
 		year: {
 			type: Number,
-			require: true,
+			required: true,
 		},
 		genre: {
 			type: [String],
-			require: true,
+			required: true,
 			trim: true,
 		},
 		poster: {
 			type: String,
-			require: true,
+			required: true,
 			trim: true,
 		},
 		duration: {
 			type: Number,
-			require: true,
+			required: true,
 		},
 		rating: {
 			type: Number,
-			require: true,
+			required: true,
 			min: 0,
 			max: 10,
 		},
