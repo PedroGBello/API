@@ -8,7 +8,8 @@
 import { connect } from "mongoose";
 
 async function main() {
-	await connect("mongodb://localhost:27017");
+	await connect(process.env.MONGO_URI);
+	// await connect("mongodb://localhost:27017");
 }
 // Como es asincrónica, la función devuelve una promesa y con ella se usa "then()".
 // Si fuera a haber un error, se lo atrapa con "catch()":

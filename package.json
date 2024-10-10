@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"type": "module",
 	"scripts": {
-		"dev": "node --watch --env-file ./.env src/index.js",
+		"dev": "node --watch --env-file .env src/index.js",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {
@@ -17,5 +17,11 @@
 	"bugs": {
 		"url": "https://github.com/PedroGBello/API/issues"
 	},
-	"homepage": "https://github.com/PedroGBello/API#readme"
+	"homepage": "https://github.com/PedroGBello/API#readme",
+	"dependencies": {
+		"bcrypt": "^5.1.1",
+		"express": "^4.21.1",
+		"jsonwebtoken": "^9.0.2",
+		"mongoose": "^8.7.1"
+	}
 }

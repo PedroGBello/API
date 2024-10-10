@@ -11,6 +11,7 @@
 
 import express from "express";
 import { router as musicRouter } from "./Routers/music.js";
+import { router as authRouter } from "./routers/auth.js";
 import "./config/mongoDB.js";
 
 const PORT = process.env.PORT ?? 3000;
@@ -18,10 +19,11 @@ const app = express();
 
 app.use(express.json());
 app.use("/api/v1/music", musicRouter);
+app.use("/api/v1/auth", authRouter);
 
 app.get("/", (req, res) => {
 	console.log(req);
-	res.send("Hello, World!");
+	res.send("Pedro G. Bello");
 });
 app.listen(PORT, (error) => {
 	error
