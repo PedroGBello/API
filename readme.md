@@ -2,8 +2,10 @@
 
 **_Pedro G. Bello_**
 
+> [!IMPORTANT]
+> Instalar NODE MODULES y las dependencias _Mongoose_, _Express_, _Bcrypt_, _JsonWebToken_ y _Helmet_.
+
 > [!NOTE]
->
 > ### Pasos a seguir:
 >
 > 1. Registrarse en http://localhost:3000/api/v1/auth/register
