@@ -1,11 +1,3 @@
-/*
-    1. Import mongoose from "mongoose" after installation;
-    2. Create Schema;
-    3. Create MusicSchema;
-    4. Index title;
-    5. Export Music Model;
-*/
-
 import { mongoose } from "mongoose";
 const Schema = mongoose.Schema;
 const MusicSchema = new Schema(

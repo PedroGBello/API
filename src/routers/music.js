@@ -1,10 +1,3 @@
-/*
-    1. Import Router from "express";
-    2. Declare variable "router";
-    3. Route endpoints with request methods to Controllers;
-    4. Import musicController from "src/controllers/music.js"
-*/
-
 import { Router } from "express";
 import { musicController } from "../controllers/music.js";
 import { verifyAccessToken } from "../middlewares/verifyAccessToken.js";
