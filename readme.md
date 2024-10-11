@@ -3,6 +3,7 @@
 **_Pedro G. Bello_**
 
 > [!IMPORTANT]
+> > ### Dependencias:
 > Instalar NODE MODULES y las dependencias _Mongoose_, _Express_, _Bcrypt_, _JsonWebToken_ y _Helmet_.
 
 > [!NOTE]
