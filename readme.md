@@ -39,7 +39,7 @@
 {
 	"title": "Style (Taylor's Version)",
 	"artist": "Taylor Swift",
-	"album": "1989",
+	"album": "1989 (Taylor's Version)",
 	"year": 2023,
 	"genre": ["Synth Pop", "Pop Rock"],
 	"poster": "https://i.scdn.co/image/ab67616d0000b273904445d70d04eb24d6bb79ac",
