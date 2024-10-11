@@ -1,7 +1,3 @@
-/*
-    Export object "musicController";
-	Import Model "Music" from "src/Models/mongoDB/Music";
-*/
 import Music from "../Models/mongoDB/Music.js";
 
 export const musicController = {
