@@ -68,7 +68,7 @@ export const musicController = {
 	},
 	// create a resource: ----------------
 	async createOne(req, res) {
-		const { title, artist, album, year, genre, poster, duration, rating } =
+		const { title, artist, album, year, genre, poster, duration } =
 			req.body;
 		try {
 			const newMusic = new Music({
@@ -79,7 +79,6 @@ export const musicController = {
 				genre,
 				poster,
 				duration,
-				rating,
 			});
 			const savedMusic = await newMusic.save();
 			res.status(200).json({
@@ -136,7 +135,7 @@ export const musicController = {
 					message: "Deletion failed. Music not found.",
 				});
 			}
-			res.status(204).send();
+			res.status(204).end();
 		} catch (error) {
 			res.status(500).json({
 				status: 500,

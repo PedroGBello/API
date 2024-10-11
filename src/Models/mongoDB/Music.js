@@ -43,12 +43,6 @@ const MusicSchema = new Schema(
 			type: Number,
 			required: true,
 		},
-		rating: {
-			type: Number,
-			required: true,
-			min: 0,
-			max: 10,
-		},
 	},
 	{ timestamps: true }
 );
